@@ -2,31 +2,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FP kayla deuser</title>
-</head>
-<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+* {
+  box-sizing: border-box;
+}
+
+
+/* Add a gray background color with some padding */
 body {
-  background-color: lightblue;
+  font-family: "Lucida Console", "Courier New", monospace; 
+  padding: 20px;
+  background: hsl(310, 100%, 97%);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: hsl(314, 100%, 93%);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  color: white;
+ 
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  color: white;
+  padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: hsl(328, 99%, 89%);;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: hsl(328, 99%, 89%);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
 }
 </style>
-<h1 style="font-size:50px;background-color:white;text-align:center;">IT 1000 - Final Project</h1>
-<h2 style="text-align:center;">By: Kayla Deuser</h2>
+</head>
+<body>
+<div class="header">
+  <h2 style="color: White;"> MY WEBSITE</h2>
+</div>
 
-<p style="text-align:center;">This is a travel bucket list website.</p>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TRAVEL</h2>
+      <h5>Apr 20, 2023</h5>
+      <nav>
+  <ul>
+    <li><a href="">BUCKET LIST</a></li>
+    <li><a href="discover.html">FAVORITES</a></li>
+    <li><a href="blog.html">BLOG</a></li>
+    <li><a href="index.html">HOME</a></li>
+  </ul>
+</nav>
 
-<img src="IMG_5589.JPG" alt=" ❤︎ PIC OF MY FRIEND & I " width="300" height="300">
-<hr>
+      <p>This is a website dedicated to my Travel Bucket List. It is a goal of mine to finish it someday hopefully!! The links above will direct you to different pages of the cite.</p>
+     
 
-<p style="text-align:center;"><b>Here are links to the other pages of this website. <b></p>
 
-<p style="text-align:center;"> Each of the links below is a place on my travel bucket list.</p>
-
-<button onclick="document.location='default.asp'">Cinque Terre, ITALY</button>
-<button onclick="document.location='default.asp'">Santorini, GREECE</button>
-<button onclick="document.location='default.asp'">Vienna, AUSTRIA</button>
-<button onclick="document.location='default.asp'">Maui, HAWAII</button>
+<div class="footer">
+  <h2>IT 1000 Final Project</h2>
+  <h3>Kayla deuser</h3>
+</div>
 
 </body>
 </html>
-

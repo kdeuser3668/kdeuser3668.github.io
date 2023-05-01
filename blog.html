@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+/* Add a gray background color with some padding */
+body {
+  font-family: "Lucida Console", "Courier New", monospace; 
+  padding: 20px;
+  background: hsl(310, 100%, 97%);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: hsl(314, 100%, 93%);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  color: white;
+ 
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  color: white;
+  padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: hsl(328, 99%, 89%);;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: hsl(328, 99%, 89%);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h2 style="color: White;"> Kayla's Travel Blog</h2>
+</div>
+
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div><img src="IMG_5589.JPG" alt="Picture of Me" width="500" height="600"></div>
+      <p>HI!! My name is Kayla Deuser. I am a Freshman at the University of Missouri. A couple fun facts about me: I am a IT major, I have three little sister, and I am in a sorority</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div><img src="IMG_5152.HEIC" alt= "Pic of my bestfriend & I ♡ " width="500" height="600"></div><br>
+      <div><img src="IMG_7281.JPG" alt="GameDay photo" width="500" height="600"></div><br>
+      <div><img src="IMG_4831.HEIC" alt="Mom's Weekend pic" width="500" height="600"></div><br>
+      
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Instagram: @Kayla_Deuser</p><p>Facebook: @KaylaDeuser</p><p>TikTok: @kayla.deuser</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>IT 1000 Final Project</h2>
+</div>
+
+</body>
+</html>

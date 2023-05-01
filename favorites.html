@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+/* Add a gray background color with some padding */
+body {
+  font-family: "Lucida Console", "Courier New", monospace; 
+  padding: 20px;
+  background: hsl(310, 100%, 97%);
+}
+
+/* Header/ Title */
+.header {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: hsl(314, 100%, 93%);
+  color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  color: white;
+ 
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  color: white;
+  padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: hsl(328, 99%, 89%);;
+   padding: 20px;
+   margin-top: 20px;
+   text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: hsl(329, 100%, 80%);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h2 style="color: White;"> My TOP 10 places to visit </h2>
+ <h6 style="color: White;"> **insert discover page link here** </h6>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>❤︎ FAVORITES ❤︎ </h2>
+      <h5>FYI: Ranking from best -> worst</h5>
+      
+      <ol>
+        <li>Great Barrier Reef, Australia</li>
+        <li>Vienna, Austria</li>
+        <li>Florence, Italy</li>
+        <li>Rio de Janiero, Brazil</li>
+        <li>Incredible temples of Bagan </li>
+        <li>Paris, France</li>
+        <li>Pacific Coast Highway, CA</li>
+        <li>Kihei, Hawaii</li>
+        <li>Niagra Falls, NY</li>
+        <li>New Orleans, LA</li>
+      </ol> 
+      
+    </div>
+    <div class="footer">
+      <h2></h2>
+      <img src="Tumblr.png" alt="Aesthetic picture: Flower Fields" width="400" height="400">
+      <p></p>
+    </div>
+    <div class="card">
+      <h2>If you want to discover more about these places and what makes them special go on over to this page below.</h2>
+      <h4><a href="discover.html">Discover Page</a></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    
+  
+  </div>
+</div>
+
+<div class="footer">
+  <h2>IT 1000 Final Project</h2>
+</div>
+
+</body>
+</html>

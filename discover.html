@@ -1,1 +1,201 @@
+<!-- This is a comment -->
 
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Console", "Courier New", monospace; 
+  padding: 20px;
+  background: hsl(310, 100%, 97%);
+}
+
+.header {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: hsl(314, 100%, 93%);
+  color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  color: white;
+ 
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  color: white;
+  padding-left: 20px;
+}
+
+
+.card {
+   background-color: hsl(328, 99%, 89%);;
+   padding: 20px;
+   margin-top: 20px;
+   text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: hsl(329, 100%, 80%);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<!---------------------------------------------------------- CODE BEGINS HERE ---------------------------------------------------------------------->
+  
+<!-- Header w/ TITLE -->
+
+<div class="header">
+  <h2 style="color: White;"> Favorites: Top 5 places you NEED visit </h2>
+ <h6 style="color: White;"></h6>
+</div>
+
+<!-- LIST of top 5 places -->
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style="color:hsl(329, 100%, 80%);"> ❤︎ FAVORITES ❤︎ </h2>
+      <h5>TOP 5 destinations</h5>
+      
+      <ol>
+        <li>Great Barrier Reef, Australia</li>
+        <li>Vienna, Austria</li>
+        <li>Florence, Italy</li>
+        <li>Rio de Janiero, Brazil</li>
+        <li>Grace Bay Beach, Turks and Caicos</li>
+      </ol> 
+      
+    </div>
+    
+    
+    
+    <!-- aesthetic picture -->
+    
+    <div class="footer">
+      <h2></h2>
+      <img src="Tumblr.png" alt="Aesthetic picture: Flower Fields" width="400" height="400">
+      <p></p>
+    </div>
+    
+    <!-- #1 article -->
+    
+    <div class="footer">
+  <h2>#1 Great Barrier Reef, Australia</h2>
+  <p>The Great Barrier Reef, which extends for over 2,300 kilometers (1429 miles) along the northeastern coast 
+    of Australia, is home to over 9,000 known species. The biodiversity it contains is remarkable. Because of 
+    this it has some of the best snorkeling in the world. One of my favorite hobbies is snorkeling, making this my top destination.
+   </p>
+  <img src="reef.jpg" alt="Aerial picture of reef" width="400" height="400">
+  <h4><a href="https://www.telegraph.co.uk/travel/plan-your-australian-holiday/queensland/why-the-great-barrier-reef-is-so-special/">Why the Great Barrier Reef is so special.</a></h4>
+</div>
+    
+    <!-- #2nd article -->
+    
+    <div class="footer">
+  <h2>#2 Vienna, Austria</h2>
+    <p>In 2019, for the second time running,<b>Vienna was named the “World’s Most Liveable City”</b>. 
+    It is a beautiful and clean city, and is widely known for it's lively culture, music, food, greenery, 
+    and architectural history. <b>FUN FACT:<b/> One of my favorite movies growing up was <i>The Sound of Music</i>. 
+    I loved everything about that movie, but most of all how beautiful the scenery was. That's how 
+    I discovered Vienna in the first place :).
+    </p>
+    <img src="vienna.jpg" alt="Picture of the city" width="400" height="400">
+  <h4><a href="https://theculturetrip.com/europe/austria/articles/why-you-should-visit-vienna-the-worlds-most-liveable-city/">Why You Should visit Vienna, According to People Who Live there..</a></h4>
+</div>
+  
+    
+        <!-- #3rd article -->
+    
+    <div class="footer">
+  <h2>#3 Florence Italy </h2>
+    <p> <b>It has always been a personal dream of mine to one day visit Italy, so this is a top destination 
+      of mine, in my opinion, Italy is by far one of the most beautiful countries. "Florence is a place to immerse yourself in history, art and architecture.
+      Dubbed the birthplace of the Renaissance, it’s home to works by Leonardo Da Vinci and Michelangelo at the world-famous Uffizi Gallery, plus beautiful attractions like 
+      the Ponte Vecchio and the Boboli Gardens. 
+    </p>
+    <img src="florence3.webp" alt="Scenic picture" width="400" height="400">
+    <img src="florence2.jpg" alt="Christ the Redeemer" width="400" height="400">
+  <h4><a href="https://theculturetrip.com/europe/italy/articles/11-reasons-everyone-should-visit-florence-at-least-once/">The top reasons Why Everyone should visit Florence at least Once</a></h4>
+</div>
+    
+    <!-- #4th article -->
+    
+    <div class="footer">
+  <h2>#4 Rio de Janiero, Brazil </h2>
+    <p> <b>It is a beautiful and diverse city that is defined by its natural wonders and stunning
+      beaches. It is also home to a complex urban life. </b> In addition, it has one of the seven 
+      wonders of the world, Christ the Redeemer.
+    </p>
+    <img src="RDJ1.jpeg" alt="Picture of the city" width="400" height="400">
+    <img src="RDJ22.jpeg" alt="Christ the Redeemer" width="400" height="400">
+  <h4><a href="https://theculturetrip.com/europe/austria/articles/why-you-should-visit-vienna-the-worlds-most-liveable-city/">Why You Should visit Vienna, According to People Who Live there..</a></h4>
+</div>
+    
+  <!-- #5th article -->
+    
+    <div class="footer">
+  <h2>#5 Grace Bay Beach, Turks and Caicos</h2>
+    <p> This is consistentley rated one of the top beaches in the world. This magnificent beach
+      has the sublime combo of white sand and warm water. Snorkeling is also popular here, as it's 
+      underwater world consists of rays, green turtles, and all sorts of fish.
+    </p>
+    <img src="TC1.jpeg" alt="Picture of Island" width="400" height="400">
+    <img src="TC3.jpeg" alt="Aerial view of beach" width="400" height="400">
+  <h4><a href="https://www.visittci.com/about/why-visit">Top 10 reasons to Visit the Turks and Caicos</a></h4>
+</div>
+    
+    <!-- ..?idk?.. -->
+    <div class="card">
+      <h2>If you want to discover more about these places and what makes them special go on over to this page below.</h2>
+      <h4><a href="discover.html">Discover Page</a></h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    
+  
+  </div>
+</div>
+
+<div class="footer">
+  <h2>IT 1000 Final Project</h2>
+</div>
+
+</body>
+</html>

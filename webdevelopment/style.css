@@ -1,0 +1,39 @@
+/* Color Variables */
+:root {
+    --primary: #1F3C88;
+    --secondary: #F4F6FB;
+    --accent: #FFB703;
+    --background: #F5F7FA;
+    --text: #1F2937;
+}
+
+/* Page Styling */
+body {
+    background-color: var(--background);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text);
+    margin: 20px;
+}
+
+/* Main Heading */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    color: var(--primary);
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Optional Navigation Styling */
+nav a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--accent);
+}

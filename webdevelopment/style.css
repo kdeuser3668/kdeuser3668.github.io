@@ -39,53 +39,112 @@ nav a:hover {
 }
 
 /* =========================
-   Hero Section Styling
+   Enhanced Hero Section
 ========================= */
 
 .hero {
-    background: linear-gradient(
-        135deg,
-        var(--primary),
-        #2a52be
-    );
+    background: linear-gradient(135deg, var(--primary), #2a52be);
     color: white;
-    text-align: center;
-    padding: 120px 20px;
-    border-radius: 10px;
+    padding: 120px 40px;
+    border-radius: 16px;
     margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative floating shapes */
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    z-index: 0;
+}
+
+.hero::before {
+    width: 280px;
+    height: 280px;
+    top: -60px;
+    left: -60px;
+}
+
+.hero::after {
+    width: 220px;
+    height: 220px;
+    bottom: -50px;
+    right: -50px;
+}
+
+.hero-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 52px;
+    font-size: 58px;
     font-weight: 700;
-    letter-spacing: 1px;
     margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .hero p {
     font-size: 20px;
-    max-width: 750px;
-    margin: 0 auto 35px auto;
     line-height: 1.8;
+    margin-bottom: 35px;
     opacity: 0.95;
 }
 
-/* Button Styling */
+/* Hero Graphic */
+.hero-graphic img {
+    width: 260px;
+    filter: drop-shadow(0 10px 25px rgba(0,0,0,0.25));
+    animation: float 4s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Button */
 .btn {
     display: inline-block;
     background-color: var(--accent);
     color: #1F2937;
-    padding: 14px 32px;
+    padding: 16px 38px;
     text-decoration: none;
     font-weight: 600;
-    border-radius: 30px;
+    border-radius: 40px;
+    font-size: 18px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
 }
 
 .btn:hover {
     background-color: #ffd166;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25);
 }
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-graphic img {
+        width: 200px;
+    }
+}
+

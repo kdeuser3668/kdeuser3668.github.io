@@ -204,21 +204,43 @@ footer {
    PDF Link (Box Model Styling)
 ========================= */
 .pdf-link {
-    display: inline-block;           /* Makes padding/margin work nicely */
-    padding: 12px 24px;              /* Space inside the link */
-    margin: 20px 0;                  /* Space outside the link */
-    border: 2px solid var(--primary);/* Border using primary color */
-    background-color: var(--accent); /* Background color */
-    color: var(--text);              /* Text color */
-    text-decoration: none;           /* Remove underline */
-    border-radius: 10px;             /* Rounded corners */
-    font-weight: 700;                /* Bold text */
-    transition: all 0.3s ease;       /* Smooth hover transition */
+    display: inline-block;           
+    padding: 12px 24px;              
+    margin: 20px 0;                  
+    border: 2px solid var(--primary);
+    background-color: var(--accent); 
+    color: var(--text);              
+    text-decoration: none;           
+    border-radius: 10px;             
+    font-weight: 700;                
+    transition: all 0.3s ease;       
     font-size: 18px;
 }
 
 .pdf-link:hover {
-    background-color: #F4A500;       /* Slightly darker accent on hover */
-    border-color: #0F2C70;           /* Optional hover border color */
-    transform: translateY(-2px);      /* Slight lift on hover */
+    background-color: #F4A500;       
+    border-color: #0F2C70;           
+    transform: translateY(-2px);     
+}
+
+/* =========================
+   Custom List Styling
+========================= */
+.custom-list {
+    list-style-type: square;       
+    padding-left: 30px;            
+    margin: 20px 0;                
+}
+
+.custom-list li {
+    font-size: 18px;               
+    color: var(--primary);         
+    line-height: 1.8;              
+    margin-bottom: 10px;           
+    transition: all 0.3s ease;     
+}
+
+.custom-list li:hover {
+    color: var(--accent);          
+    cursor: pointer;               
 }

@@ -28,11 +28,25 @@ body {
    Layout Container
 ========================= */
 main,
-nav,
 header {
     max-width: 1100px;
     margin: 0 auto;
     padding: 40px 20px;
+}
+
+/* =========================
+   Header
+========================= */
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* Logo smaller */
+.logo{
+    width:80px;
+    height:auto;
 }
 
 /* =========================
@@ -62,22 +76,19 @@ p {
 /* =========================
    Navigation
 ========================= */
-nav {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-nav a {
+.main-nav a {
     color: var(--primary);
     text-decoration: none;
     font-weight: 600;
-    margin: 0 10px;
+    margin-left: 25px;
+    font-family: 'Poppins', sans-serif;
 }
 
-nav a:hover {
+.main-nav a:hover {
     color: var(--accent);
 }
 
+/* Current page */
 .current {
     font-weight: 700;
     color: var(--accent);
@@ -141,9 +152,9 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-/* Hero Image — FIXED SIZE */
+/* Hero Image */
 .hero-graphic img {
-    width: 220px;              /* Smaller + cleaner */
+    width: 220px;
     max-width: 100%;
     height: auto;
     filter: drop-shadow(0 15px 30px rgba(0,0,0,0.3));
@@ -176,7 +187,9 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-/* Footer */
+/* =========================
+   Footer
+========================= */
 footer {
     text-align: center;
     padding: 40px 20px;
@@ -189,6 +202,12 @@ footer {
    Responsive
 ========================= */
 @media (max-width: 900px) {
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
     .hero {
         flex-direction: column;
         text-align: center;
@@ -204,43 +223,43 @@ footer {
    PDF Link (Box Model Styling)
 ========================= */
 .pdf-link {
-    display: inline-block;           
-    padding: 12px 24px;              
-    margin: 20px 0;                  
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 20px 0;
     border: 2px solid var(--primary);
-    background-color: var(--accent); 
-    color: var(--text);              
-    text-decoration: none;           
-    border-radius: 10px;             
-    font-weight: 700;                
-    transition: all 0.3s ease;       
+    background-color: var(--accent);
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.3s ease;
     font-size: 18px;
 }
 
 .pdf-link:hover {
-    background-color: #F4A500;       
-    border-color: #0F2C70;           
-    transform: translateY(-2px);     
+    background-color: #F4A500;
+    border-color: #0F2C70;
+    transform: translateY(-2px);
 }
 
 /* =========================
    Custom List Styling
 ========================= */
 .custom-list {
-    list-style-type: square;       
-    padding-left: 30px;            
-    margin: 20px 0;                
+    list-style-type: square;
+    padding-left: 30px;
+    margin: 20px 0;
 }
 
 .custom-list li {
-    font-size: 18px;               
-    color: var(--primary);         
-    line-height: 1.8;              
-    margin-bottom: 10px;           
-    transition: all 0.3s ease;     
+    font-size: 18px;
+    color: var(--primary);
+    line-height: 1.8;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
 }
 
 .custom-list li:hover {
-    color: var(--accent);          
-    cursor: pointer;               
+    color: var(--accent);
+    cursor: pointer;
 }

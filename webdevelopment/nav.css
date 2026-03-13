@@ -1,0 +1,38 @@
+/* =========================
+   Navigation Layout
+========================= */
+
+.main-nav{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+/* Navigation links */
+.main-nav a{
+    color:#1F3C88;
+    text-decoration:none;
+    font-weight:600;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Hover effect */
+.main-nav a:hover{
+    color:#FFB703;
+}
+
+/* Current page highlight */
+.main-nav .current{
+    color:#FFB703;
+    font-weight:700;
+}
+
+/* Responsive nav */
+@media (max-width:900px){
+
+    .main-nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+}

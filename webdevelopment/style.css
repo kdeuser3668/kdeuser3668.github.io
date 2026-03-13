@@ -43,9 +43,8 @@ header{
     justify-content:space-between;
 }
 
-/* Logo smaller */
-.logo{
-    width:80px;
+header img{
+    width:50px;
     height:auto;
 }
 

@@ -80,6 +80,17 @@ p {
     margin-bottom: 20px;
 }
 
+.contact-info p {
+    margin: 6px 0;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
 /* =========================
    Navigation
 ========================= */

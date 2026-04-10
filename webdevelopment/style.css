@@ -375,3 +375,52 @@ footer {
 .contact-form button {
     align-self: flex-start;
 }
+
+/* =========================
+   ABOUT PAGE GRID LAYOUT
+========================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Left side text */
+.about-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Right side media */
+.about-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-media img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.about-media video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* =========================
+   RESPONSIVE GRID (MOBILE)
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-media {
+        order: -1; /* puts image/video on top for mobile */
+    }
+}

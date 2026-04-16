@@ -1,5 +1,5 @@
 /* =========================
-   Navigation Layout
+   Desktop Navigation
 ========================= */
 
 .main-nav{
@@ -8,7 +8,6 @@
     gap:25px;
 }
 
-/* Navigation links */
 .main-nav a{
     color:#1F3C88;
     text-decoration:none;
@@ -16,23 +15,67 @@
     font-family:'Poppins', sans-serif;
 }
 
-/* Hover effect */
 .main-nav a:hover{
     color:#FFB703;
 }
 
-/* Current page highlight */
-.main-nav .current{
-    color:#FFB703;
-    font-weight:700;
+/* Hamburger hidden by default */
+.hamburger{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
 }
 
-/* Responsive nav */
+/* Hide checkbox */
+#menu-toggle{
+    display:none;
+}
+
+/* =========================
+   Dropdown
+========================= */
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    background:#eee;
+    padding:10px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+/* =========================
+   📱 MOBILE
+========================= */
+
 @media (max-width:900px){
 
-    .main-nav{
-        flex-direction:column;
-        gap:10px;
+    /* Show hamburger */
+    .hamburger{
+        display:block;
     }
 
+    /* Hide nav by default */
+    .main-nav{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        text-align:center;
+    }
+
+    /* Show nav when clicked */
+    #menu-toggle:checked + .main-nav{
+        display:flex;
+    }
+
+    /* Hide dropdown in mobile */
+    .dropdown-menu{
+        display:none !important;
+    }
 }

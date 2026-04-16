@@ -424,3 +424,20 @@ footer {
         order: -1; /* puts image/video on top for mobile */
     }
 }
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+}

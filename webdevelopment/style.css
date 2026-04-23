@@ -587,3 +587,65 @@ section {
         grid-column: 1;
     }
 }
+/* =========================
+   TABLE STYLING (ASSIGNMENT)
+========================= */
+
+.table-container {
+    margin-top: 30px;
+    overflow-x: auto; /* makes it responsive */
+}
+
+/* Table base */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--primary); /*  border requirement */
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Caption */
+.table-container figcaption {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--primary);
+}
+
+/* Cells */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Header */
+thead {
+    background-color: var(--primary);
+    color: white;
+}
+
+/*  1st and 3rd rows SAME color */
+tbody tr:nth-child(1),
+tbody tr:nth-child(3) {
+    background-color: var(--secondary);
+}
+
+/* alternating rows using pseudo-class */
+tbody tr:nth-child(even) {
+    background-color: #eef1f7;
+}
+
+/* Footer */
+tfoot {
+    background-color: var(--accent);
+    font-weight: 500;
+}
+
+/* responsive tweak */
+@media (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+}

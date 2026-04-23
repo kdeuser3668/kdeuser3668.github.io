@@ -665,7 +665,7 @@ table {
     border-collapse: collapse;
     border: 3px solid var(--primary); /* stronger outer border */
     background: white;
-    font-size: 18px; /* ✅ bigger text */
+    font-size: 18px; /* bigger text */
 }
 
 /* Caption */
@@ -698,13 +698,13 @@ tbody th {
     color: var(--primary);
 }
 
-/* ✅ 1st and 3rd rows SAME color */
+/*  1st and 3rd rows SAME color */
 tbody tr:nth-child(1),
 tbody tr:nth-child(3) {
     background-color: var(--secondary);
 }
 
-/* ✅ alternating rows */
+/*  alternating rows */
 tbody tr:nth-child(even) {
     background-color: #eef2f8;
 }

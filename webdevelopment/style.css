@@ -724,9 +724,44 @@ tbody tr:hover {
     transition: 0.2s;
 }
 
-/* ✅ Responsive */
+/* Responsive */
 @media (max-width: 600px) {
     table {
         font-size: 15px;
     }
+}
+
+/* FORCE TABLE STYLES (override anything conflicting) */
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #1F3C88 !important;
+    background: white;
+    font-size: 18px;
+}
+
+.table-container th,
+.table-container td {
+    padding: 14px;
+    border: 2px solid #ccc !important;
+}
+
+.table-container thead th {
+    background-color: #1F3C88;
+    color: white;
+}
+
+.table-container tbody tr:nth-child(1),
+.table-container tbody tr:nth-child(3) {
+    background-color: #F4F6FB !important;
+}
+
+.table-container tbody tr:nth-child(even) {
+    background-color: #eef2f8;
+}
+
+.table-container tfoot td {
+    background-color: #FFB703;
+    font-weight: bold;
+    text-align: center;
 }

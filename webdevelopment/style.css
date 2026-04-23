@@ -649,3 +649,84 @@ tfoot {
         font-size: 14px;
     }
 }
+
+/* =========================
+   TABLE STYLING (IMPROVED)
+========================= */
+
+.table-container {
+    margin-top: 40px;
+    overflow-x: auto;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid var(--primary); /* stronger outer border */
+    background: white;
+    font-size: 18px; /* ✅ bigger text */
+}
+
+/* Caption */
+.table-container figcaption {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Header */
+thead th {
+    background-color: var(--primary);
+    color: white;
+    padding: 14px;
+    border: 2px solid var(--primary);
+    font-size: 18px;
+}
+
+/* Cells */
+th, td {
+    padding: 14px;
+    border: 1.5px solid #ccc; /* visible grid lines */
+}
+
+/* Row headers (first column) */
+tbody th {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* ✅ 1st and 3rd rows SAME color */
+tbody tr:nth-child(1),
+tbody tr:nth-child(3) {
+    background-color: var(--secondary);
+}
+
+/* ✅ alternating rows */
+tbody tr:nth-child(even) {
+    background-color: #eef2f8;
+}
+
+/* Footer */
+tfoot td {
+    padding: 14px;
+    text-align: center;
+    background-color: var(--accent);
+    font-weight: 600;
+    border-top: 2px solid var(--primary);
+}
+
+/* Hover effect (makes it feel more interactive/modern) */
+tbody tr:hover {
+    background-color: #dde6f5;
+    transition: 0.2s;
+}
+
+/* ✅ Responsive */
+@media (max-width: 600px) {
+    table {
+        font-size: 15px;
+    }
+}

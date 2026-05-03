@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- REQUIRED viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Kayla Deuser Template</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="192x192" href="heart.png">
-
 </head>
 
 <body>
@@ -32,10 +28,10 @@
         <div class="dropdown">
             <a href="project.html">Projects</a>
             <div class="dropdown-menu">
-                <a href="project.html#home">Home Section</a>
-                <a href="project.html#purpose">Purpose</a>
-                <a href="project.html#about-educator">About</a>
-                <a href="project.html#projects">Artifacts</a>
+                <a href="#home">Home Section</a>
+                <a href="#html">HTML Basics</a>
+                <a href="#css">CSS Styling</a>
+                <a href="#layout">Page Layout</a>
             </div>
         </div>
 
@@ -49,126 +45,138 @@
 
     <!-- HOME -->
     <section id="home">
-        <h1>Welcome to My Educational Website</h1>
+        <h1>Introduction to Web Development</h1>
+
         <p>
-            This website is designed to support learning, curiosity, and growth.
-            My goal is to make information clear and easy to understand.
+            This page introduces the foundational concepts of web development using HTML and CSS.
+            The goal is to help beginners understand how websites are structured, styled, and built.
         </p>
 
         <figure>
-            <img src="images/jeshoots-com-laptop-3087585.jpg" alt="Learning on laptop">
-            <figcaption>Learning in a digital environment</figcaption>
+            <img src="images/jeshoots-com-laptop-3087585.jpg" alt="Coding on laptop">
+            <figcaption>Web development workspace</figcaption>
         </figure>
     </section>
 
-    <!-- PURPOSE -->
-    <section id="purpose">
-        <h2>Website Purpose</h2>
+    <!-- TOPIC 1 -->
+    <section id="html">
+        <h2>HTML Structure Basics</h2>
+
+        <h3>Learning Goal</h3>
         <p>
-            This site helps learners explore information in a structured and simple way.
-            I focus on breaking down complex ideas into understandable parts.
+            Understand how HTML is used to structure content on a webpage using elements like headings,
+            paragraphs, images, and links.
+        </p>
+
+        <h3>Core Content</h3>
+        <p>
+            HTML (HyperText Markup Language) forms the foundation of every website. It organizes content
+            so browsers can display text, images, and media in a structured format. Tags such as &lt;h1&gt;,
+            &lt;p&gt;, and &lt;img&gt; define different parts of a webpage.
         </p>
 
         <figure>
-            <img src="316BCF35-525E-435F-AAFC-2700C5A187C2_1_105_c.jpeg" alt="Educational diagram">
-            <figcaption>Organized learning structure</figcaption>
+            <img src="316BCF35-525E-435F-AAFC-2700C5A187C2_1_105_c.jpeg" alt="HTML structure example">
+            <figcaption>Example of structured HTML content</figcaption>
         </figure>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about-educator">
-        <h2>About Me</h2>
+    <!-- TOPIC 2 -->
+    <section id="css">
+        <h2>CSS Styling Fundamentals</h2>
+
+        <h3>Learning Goal</h3>
         <p>
-            I am passionate about helping others learn through clear explanations and structured content.
+            Learn how CSS is used to control the appearance of a website, including colors, fonts,
+            spacing, and layout design.
+        </p>
+
+        <h3>Core Content</h3>
+        <p>
+            CSS (Cascading Style Sheets) is used to style HTML elements. It allows developers to change
+            how a website looks without changing its structure. CSS controls visual design such as backgrounds,
+            typography, and alignment.
         </p>
 
         <figure>
-            <img src="images/tumisu-welcome-4737158.jpg" alt="Teacher welcoming students">
-            <figcaption>Supporting student learning</figcaption>
+            <img src="66e1535077e6769e1ed1416e_664f594546f9d544dd7da80d_Hands-on%20activities%20for%20learners.webp" alt="CSS styling example">
+            <figcaption>Visual design and styling concepts</figcaption>
         </figure>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <h2>Projects & Learning Artifacts</h2>
+    <!-- TOPIC 3 -->
+    <section id="layout">
+        <h2>Website Layout and Structure</h2>
 
-        <article>
-            <h3>Diagram / Infographic</h3>
-            <figure>
-                <img src="316BCF35-525E-435F-AAFC-2700C5A187C2_1_105_c.jpeg" alt="Diagram">
-                <figcaption>Concept diagram</figcaption>
-            </figure>
-        </article>
+        <h3>Learning Goal</h3>
+        <p>
+            Understand how web pages are organized using containers, sections, and layout systems like flexbox.
+        </p>
 
-        <article>
-            <h3>Classroom Activity</h3>
-            <figure>
-                <img src="66e1535077e6769e1ed1416e_664f594546f9d544dd7da80d_Hands-on%20activities%20for%20learners.webp" alt="Activity">
-                <figcaption>Hands-on learning activity</figcaption>
-            </figure>
-        </article>
+        <h3>Core Content</h3>
+        <p>
+            Modern websites are built using structured layouts that organize content into sections such as headers,
+            navigation bars, main content, and footers. Tools like Flexbox help developers create responsive layouts
+            that adjust to different screen sizes.
+        </p>
 
-        <article>
-            <h3>Real-Life Example</h3>
-            <figure>
-                <img src="images/picjumbo_com-child-865116.jpg" alt="Real life learning">
-                <figcaption>Learning applied in real life</figcaption>
-            </figure>
-        </article>
-
-        <!-- ✅ TABLE ADDED FOR ASSIGNMENT -->
-        <figure class="table-container">
-            <figcaption>Summary of Learning Artifacts and Their Purpose</figcaption>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Artifact</th>
-                        <th scope="col">Type</th>
-                        <th scope="col">Purpose</th>
-                        <th scope="col">Skill Developed</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <th scope="row">Concept Diagram</th>
-                        <td>Visual</td>
-                        <td>Organizes ideas and relationships</td>
-                        <td>Critical Thinking</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">Classroom Activity</th>
-                        <td>Interactive</td>
-                        <td>Encourages hands-on learning</td>
-                        <td>Collaboration</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">Real-Life Example</th>
-                        <td>Application</td>
-                        <td>Connects learning to real situations</td>
-                        <td>Problem Solving</td>
-                    </tr>
-
-                    <tr>
-                        <th scope="row">Reflection</th>
-                        <td>Written</td>
-                        <td>Evaluates understanding</td>
-                        <td>Self-Assessment</td>
-                    </tr>
-                </tbody>
-
-                <tfoot>
-                    <tr>
-                        <td colspan="4">These artifacts demonstrate different ways students engage with learning.</td>
-                    </tr>
-                </tfoot>
-            </table>
+        <figure>
+            <img src="images/picjumbo_com-child-865116.jpg" alt="Layout example">
+            <figcaption>Example of structured page layout</figcaption>
         </figure>
-
     </section>
+
+    <!-- TABLE (kept, just IT-focused tweak) -->
+    <figure class="table-container">
+        <figcaption>Summary of Web Development Skills and Concepts</figcaption>
+
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Concept</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Purpose</th>
+                    <th scope="col">Skill Developed</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">HTML Structure</th>
+                    <td>Markup</td>
+                    <td>Builds webpage content structure</td>
+                    <td>Logical Organization</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">CSS Styling</th>
+                    <td>Design</td>
+                    <td>Controls visual appearance</td>
+                    <td>Design Thinking</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Page Layout</th>
+                    <td>Structure</td>
+                    <td>Organizes content into sections</td>
+                    <td>UI/UX Awareness</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Responsive Design</th>
+                    <td>Adaptation</td>
+                    <td>Ensures usability on all devices</td>
+                    <td>Problem Solving</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4">These concepts form the foundation of modern web development.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </figure>
 
 </main>
 

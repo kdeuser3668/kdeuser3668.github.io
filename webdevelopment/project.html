@@ -1,11 +1,11 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kayla Deuser Template</title>
+    <title>Projects | Educational Website</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
@@ -18,33 +18,34 @@
 <header>
     <img src="soulmatters-logo-1736292_1280.png" alt="Soul Matters Logo" width="50">
 
+    <!-- Hamburger -->
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-<nav class="main-nav">
-    <a href="Index.html">Home</a>
-    <a href="about.html">About</a>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
 
-    <div class="dropdown">
-        <a href="project.html">Projects</a>
-        <div class="dropdown-menu">
-            <a href="project.html#home">Home Section</a>
-            <a href="project.html#html">HTML Basics</a>
-            <a href="project.html#css">CSS Styling</a>
-            <a href="project.html#layout">Page Layout</a>
+        <div class="dropdown">
+            <a href="project.html" class="current">Projects</a>
+            <div class="dropdown-menu">
+                <a href="#home">Home Section</a>
+                <a href="#html">HTML Basics</a>
+                <a href="#css">CSS Styling</a>
+                <a href="#layout">Page Layout</a>
+            </div>
         </div>
-    </div>
 
-    <a href="contact.html">Contact</a>
-    <a href="reflection.html">Reflection</a>
-    <a href="resources.html">Resources</a>
-
-</nav>
+        <a href="contact.html">Contact</a>
+        <a href="reflection.html">Reflection</a>
+        <a href="resources.html">Resources</a>
+    </nav>
 </header>
 
 <main>
 
-    <!-- HOME -->
+    <!-- HOME SECTION -->
     <section id="home">
         <h1>Introduction to Web Development</h1>
 
@@ -59,7 +60,7 @@
         </figure>
     </section>
 
-    <!-- TOPIC 1 -->
+    <!-- HTML SECTION -->
     <section id="html">
         <h2>HTML Structure Basics</h2>
 
@@ -72,8 +73,8 @@
         <h3>Core Content</h3>
         <p>
             HTML (HyperText Markup Language) forms the foundation of every website. It organizes content
-            so browsers can display text, images, and media in a structured format. Tags such as &lt;h1&gt;,
-            &lt;p&gt;, and &lt;img&gt; define different parts of a webpage.
+            so browsers can display text, images, and media in a structured format. Tags such as
+            &lt;h1&gt;, &lt;p&gt;, and &lt;img&gt; define different parts of a webpage.
         </p>
 
         <figure>
@@ -82,7 +83,7 @@
         </figure>
     </section>
 
-    <!-- TOPIC 2 -->
+    <!-- CSS SECTION -->
     <section id="css">
         <h2>CSS Styling Fundamentals</h2>
 
@@ -105,7 +106,7 @@
         </figure>
     </section>
 
-    <!-- TOPIC 3 -->
+    <!-- LAYOUT SECTION -->
     <section id="layout">
         <h2>Website Layout and Structure</h2>
 
@@ -127,7 +128,7 @@
         </figure>
     </section>
 
-    <!-- TABLE (kept, just IT-focused tweak) -->
+    <!-- TABLE -->
     <figure class="table-container">
         <figcaption>Summary of Web Development Skills and Concepts</figcaption>
 
